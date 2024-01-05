@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Daniel
 subtitle: ''
-description: ''
+description: '记录'
 keywords:
-author: John Doe
-language: en
+author: Jai Waetford
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://pc0208.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -45,7 +45,7 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
@@ -96,9 +96,35 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/pc0208/pc0208.github.io.git
+  branch: main
+
+# Math 数学 katex
+# markdown:
+#   plugins:
+#     - '@renbaoshuo/markdown-it-katex'
+# 音乐
+aplayer:
+  asset_inject: false
+  meting: true
+
+# Markdown
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+algolia:
+  applicationID: 'applicationID'
+  apiKey: 'apiKey'
+  indexName: '...'
