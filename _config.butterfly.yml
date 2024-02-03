@@ -57,7 +57,7 @@ disable_top_img: false
 index_img: ../../../img/zhuye.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://p4.itc.cn/images01/20210203/b6f72e05421a41d69bd1bd332fa4a5f2.jpeg
 
 # The banner image of archive page
 archive_img:
@@ -71,6 +71,8 @@ tag_img:
 # 並不推薦為每個 tag 和每個 category 都配置不同的頂部圖，因為配置太多會拖慢生成速度
 #  - tag name: xxxxx
 tag_per_img:
+  aplayer: https://up.enterdesk.com/edpic_source/d1/75/63/d17563f015467a4f4d22dfc350a55784.jpg
+  android: https://uploadfile.bizhizu.cn/up/05/e3/b4/05e3b4aedaec3cf0e997f802df6e0294.jpg.source.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -164,7 +166,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -380,7 +382,7 @@ katex:
 
 # Algolia search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 6
   fields:
@@ -388,13 +390,13 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # 在页面加载时预加载搜索数据
   preload: false
   # 显示前n个结果每篇文章，显示所有结果设置为-1
   top_n_per_article: 1
   # 将html字符串转义为可读字符串。
-  unescape: false
+  unescape: true
   CDN:
 
 # Docsearch
@@ -540,10 +542,10 @@ artalk:
 
 # Chat Button [recommend]
 # 它将在网站的右下角创建一个按钮，并隐藏原点按钮
-chat_btn: true
+chat_btn: false
 
 # 向上滚动时显示原点聊天按钮，向下滚动时隐藏按钮
-chat_hide_show: true
+chat_hide_show: false
 
 # chatra
 # https://chatra.io/
@@ -581,7 +583,7 @@ messenger:
 
 # Baidu Analytics
 # https://tongji.baidu.com/web/welcome/login
-baidu_analytics:
+baidu_analytics: c1ea8b9fc3b36c7d26806f26569c53d2
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
@@ -662,7 +664,7 @@ text_align_justify: false
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://p0.itc.cn/images01/20200926/35186ed59168409b8d8ccbfa89beb596.jpeg)
+background: url(https://p4.itc.cn/images01/20210203/b6f72e05421a41d69bd1bd332fa4a5f2.jpeg)
 
 # Footer Background
 footer_bg: true
@@ -741,11 +743,12 @@ clickShowText:
 display_mode: light
 
 # Beautify (美化頁面顯示)
+# 美化頁面顯示
 beautify:
-  enable: false
-  field: post # site/post
-  title-prefix-icon: # '\f0c1'
-  title-prefix-icon-color: # '#F47466'
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -945,7 +948,7 @@ inject:
 
   bottom:
     - <script defer src="/live2d-widget/autoload.js"></script>
-    - <div class="aplayer no-destroy" data-id="6845433364" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    - <div class="aplayer no-destroy" data-id="327881029" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
